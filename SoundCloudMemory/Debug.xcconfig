@@ -1,0 +1,13 @@
+//
+//  Debug.xcconfig
+//  SoundCloudMemory
+//
+//  Created by Anonymous on 29.09.2018.
+//  Copyright © 2018 Anonymous. All rights reserved.
+//
+
+#include "Pods/Target Support Files/Pods-SoundCloudMemory/Pods-SoundCloudMemory.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-SoundCloudMemoryTests/Pods-SoundCloudMemoryTests.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-SoundCloudMemoryUITests/Pods-SoundCloudMemoryUITests.debug.xcconfig"
+
+APP_ENV = debug

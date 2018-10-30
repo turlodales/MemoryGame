@@ -1,0 +1,6 @@
+framework module Pods_SoundCloudMemoryTests {
+  umbrella header "Pods-SoundCloudMemoryTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

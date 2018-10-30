@@ -1,0 +1,41 @@
+/* 
+  Localizable.strings
+  SoundCloudMemory
+
+  Created by Anonymous on 29.09.2018.
+  Copyright © 2018 Anonymous. All rights reserved.
+*/
+
+// errors
+"error-network" = "Unable to connect to the Internet";
+"error-no-data" = "No response data";
+"error-json-format" = "Json format is invalid";
+"error-unknown" = "Unknown error";
+"error-cant-download-image" = "Unable to download the images";
+"error-game-unsufficient-image" = "Unsufficient image resources";
+
+// titles
+"title-info" = "Info";
+"title-warning" = "Warning";
+"title-error" = "Error";
+
+// actions
+"action-done" = "Done";
+"action-okay" = "Okay";
+"action-close" = "Close";
+"action-cancel" = "Cancel";
+
+// game states
+"game-state-initial" = "Game is initiated";
+"game-state-fetching" = "Fetching cards...";
+"game-state-downloading" = "Downloading images...";
+"game-state-preparing" = "Preparing...";
+"game-state-ready" = "Ready!";
+"game-state-failed" = "Failed :(";
+
+// logger
+"log-debug" = "DEBUG";
+"log-warning" = "WARNING";
+"log-info" = "INFO";
+"log-verbose" = "VERBOSE";
+"log-error" = "ERROR";

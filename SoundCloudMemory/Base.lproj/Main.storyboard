@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wvM-6g-iji">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="initialViewController" id="BYZ-38-t0r" customClass="InitialViewController" customModule="SoundCloudMemory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-app" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-eq-e1Y" userLabel="Image View - SoundCloud">
+                                <rect key="frame" x="141" y="197" width="93" height="80"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SoundCloud Memory Game" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdP-NQ-MmR" userLabel="Label - Slogan">
+                                <rect key="frame" x="37.5" y="292" width="300" height="67"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-aW-OM2">
+                                <rect key="frame" x="37.5" y="537" width="300" height="105"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPZ-J1-Vlx" userLabel="Button - Play">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="aAm-PG-gZg">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <state key="normal" title="Play Game">
+                                            <color key="titleColor" red="1" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playButtonTouchInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjP-yp-yIj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pME-wi-SX5" userLabel="Button - How to Play">
+                                        <rect key="frame" x="0.0" y="60" width="300" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="fsZ-lA-xME">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="55"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <state key="normal" title="How To Play">
+                                            <color key="titleColor" red="1" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="9fJ-zR-Tcz" kind="show" id="4uy-1l-gGf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5IP-Hq-Pk7" userLabel="Activity Indicator">
+                                <rect key="frame" x="169" y="459" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxn-Um-zZc" userLabel="Label - Progress">
+                                <rect key="frame" x="37.5" y="504" width="300" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eVK-aW-OM2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="31D-Bs-SoG"/>
+                            <constraint firstItem="pPZ-J1-Vlx" firstAttribute="top" secondItem="Vxn-Um-zZc" secondAttribute="bottom" constant="33" id="4BP-e9-Fkv"/>
+                            <constraint firstItem="FdP-NQ-MmR" firstAttribute="top" secondItem="mzM-eq-e1Y" secondAttribute="bottom" constant="15" id="5xP-2G-H9B"/>
+                            <constraint firstItem="FdP-NQ-MmR" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-40" id="EIk-vs-sz9"/>
+                            <constraint firstItem="FdP-NQ-MmR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="FrB-z2-Ne2"/>
+                            <constraint firstItem="Vxn-Um-zZc" firstAttribute="centerX" secondItem="5IP-Hq-Pk7" secondAttribute="centerX" id="FrY-di-4bM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eVK-aW-OM2" secondAttribute="bottom" constant="25" id="NWL-cJ-lQY"/>
+                            <constraint firstItem="Vxn-Um-zZc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="a2H-0A-ylF"/>
+                            <constraint firstItem="eVK-aW-OM2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="caR-UN-0vP"/>
+                            <constraint firstItem="Vxn-Um-zZc" firstAttribute="top" secondItem="5IP-Hq-Pk7" secondAttribute="bottom" constant="8" id="czM-9Q-IqD"/>
+                            <constraint firstItem="5IP-Hq-Pk7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="euL-3g-l4B"/>
+                            <constraint firstItem="FdP-NQ-MmR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nb4-Ms-dHV"/>
+                            <constraint firstItem="mzM-eq-e1Y" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oE6-7A-xPd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cVP-V0-Hgt"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="5IP-Hq-Pk7" id="nIO-P7-eId"/>
+                        <outlet property="howToPlayButton" destination="pME-wi-SX5" id="vAA-bb-6e2"/>
+                        <outlet property="playButton" destination="pPZ-J1-Vlx" id="3if-TX-ixg"/>
+                        <outlet property="progressLabel" destination="Vxn-Um-zZc" id="HI4-Cy-GXR"/>
+                        <outlet property="stackView" destination="eVK-aW-OM2" id="hcO-hF-LWn"/>
+                        <segue destination="pEd-xe-hOH" kind="show" identifier="startGame" id="JM7-Bs-A86"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Memory Game-->
+        <scene sceneID="Zwp-yT-jCo">
+            <objects>
+                <viewController storyboardIdentifier="gameViewController" id="pEd-xe-hOH" customClass="GameViewController" customModule="SoundCloudMemory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SBl-BQ-xfS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Udj-Wv-df0">
+                                <rect key="frame" x="20" y="84" width="335" height="563"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Udj-Wv-df0" firstAttribute="top" secondItem="8Xv-Yk-Lao" secondAttribute="top" constant="20" id="5C6-FI-07s"/>
+                            <constraint firstItem="8Xv-Yk-Lao" firstAttribute="trailing" secondItem="Udj-Wv-df0" secondAttribute="trailing" constant="20" id="W5P-JQ-B9g"/>
+                            <constraint firstItem="Udj-Wv-df0" firstAttribute="leading" secondItem="8Xv-Yk-Lao" secondAttribute="leading" constant="20" id="j6M-mQ-281"/>
+                            <constraint firstItem="8Xv-Yk-Lao" firstAttribute="bottom" secondItem="Udj-Wv-df0" secondAttribute="bottom" constant="20" id="v4V-t4-U3x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Xv-Yk-Lao"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Memory Game" id="Nk0-Rv-Z6I">
+                        <barButtonItem key="leftBarButtonItem" image="icon-back" id="ljI-gl-GOi">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backButtonDidTouch:" destination="pEd-xe-hOH" id="daA-oZ-49Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="stackView" destination="Udj-Wv-df0" id="7Dd-IG-1P0"/>
+                        <segue destination="fv4-wi-vWl" kind="show" identifier="gameFinished" id="L41-pf-4wG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5F-8n-a2E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082" y="-294"/>
+        </scene>
+        <!--Game Completed-->
+        <scene sceneID="l4L-L7-qJZ">
+            <objects>
+                <viewController id="fv4-wi-vWl" customClass="GameResultViewController" customModule="SoundCloudMemory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Sa-J4-WJD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congrats! You've finished the game!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYg-BL-gTT" userLabel="Label - Slogan">
+                                <rect key="frame" x="37.5" y="294" width="300" height="143.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dYg-BL-gTT" firstAttribute="centerY" secondItem="cbl-H8-thU" secondAttribute="centerY" id="mVh-cl-YfW"/>
+                            <constraint firstItem="dYg-BL-gTT" firstAttribute="centerX" secondItem="cbl-H8-thU" secondAttribute="centerX" id="okU-U0-Lkn"/>
+                            <constraint firstItem="dYg-BL-gTT" firstAttribute="width" secondItem="1Sa-J4-WJD" secondAttribute="width" multiplier="0.8" id="p5v-Xr-6Zn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cbl-H8-thU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Game Completed" id="OKT-nH-mKV">
+                        <barButtonItem key="leftBarButtonItem" image="icon-back" id="1Cq-Hf-4qK">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backButtonDidTouch:" destination="fv4-wi-vWl" id="G2k-94-cxG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZ9-dO-MPd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3103" y="-295"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c7O-Kt-bNx">
+            <objects>
+                <navigationController id="wvM-6g-iji" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a4p-ee-vId">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2m3-XP-O1F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTH-Wm-7sv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-830" y="27"/>
+        </scene>
+        <!--How To Play-->
+        <scene sceneID="Iaq-so-GbA">
+            <objects>
+                <viewController id="9fJ-zR-Tcz" customClass="InstructionsViewController" customModule="SoundCloudMemory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oxd-sW-nfJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp0-ha-aTS">
+                                <rect key="frame" x="15" y="79" width="345" height="573"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">How It Works
+You can initiate the game by pressing "Start Game" button. When you hit, application will request images from SoundCloud API.
+
+If you want to stop the game and go back to beginning, just hit back button. That will end the game.
+
+How To Play
+When the game has started, you can select and tap to cards to match them.
+
+Your aim is to find the matching cards by remembering the positions.
+
+If you find the same images in two subsequent tap actions, it's a match!
+
+If you can't find the same images in your actions, it's a miss :(
+
+Enjoy it! :)</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.33333333329999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dMB-6l-hbp" firstAttribute="trailing" secondItem="hp0-ha-aTS" secondAttribute="trailing" constant="15" id="8vD-U0-keo"/>
+                            <constraint firstItem="hp0-ha-aTS" firstAttribute="leading" secondItem="dMB-6l-hbp" secondAttribute="leading" constant="15" id="PK2-qf-gn1"/>
+                            <constraint firstItem="dMB-6l-hbp" firstAttribute="bottom" secondItem="hp0-ha-aTS" secondAttribute="bottom" constant="15" id="gHD-fk-mZy"/>
+                            <constraint firstItem="hp0-ha-aTS" firstAttribute="top" secondItem="dMB-6l-hbp" secondAttribute="top" constant="15" id="o4T-EK-LbQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dMB-6l-hbp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="How To Play" id="2Gz-sO-K5M">
+                        <barButtonItem key="leftBarButtonItem" image="icon-back" id="5Ic-sF-avk">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backButtonDidTouch:" destination="9fJ-zR-Tcz" id="RG9-ii-FXw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qpn-0t-dwJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082" y="439"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-app" width="93" height="80"/>
+        <image name="icon-back" width="16" height="27"/>
+    </resources>
+</document>

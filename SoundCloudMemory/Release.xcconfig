@@ -1,0 +1,13 @@
+//
+//  Release.xcconfig
+//  SoundCloudMemory
+//
+//  Created by Anonymous on 29.09.2018.
+//  Copyright © 2018 Anonymous. All rights reserved.
+//
+
+#include "Pods/Target Support Files/Pods-SoundCloudMemory/Pods-SoundCloudMemory.release.xcconfig"
+#include "Pods/Target Support Files/Pods-SoundCloudMemoryTests/Pods-SoundCloudMemoryTests.release.xcconfig"
+#include "Pods/Target Support Files/Pods-SoundCloudMemoryUITests/Pods-SoundCloudMemoryUITests.release.xcconfig"
+
+APP_ENV = release
