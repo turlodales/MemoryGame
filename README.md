@@ -36,10 +36,10 @@ When user taps to "Play Game" button;
 
 ### Project Architecture
 
-I used Model-View-Controller architecture as a design pattern.
+Model-View-Controller(MVC) architecture is used.
 
 ### Environment Variables
-There is an `Environment.swift` file under `Util` folder. This file is containing app specific constants like Api URL, Client Id and Client Secret etc. I designed such structure to deliver the app for multiple environments for debug or release. If you build the app with Debug, app logs will be shown.
+There is an `Environment.swift` file under `Util` folder. This file is containing app specific constants like Api URL, Client Id and Client Secret etc. It's designed with a such structure to deliver the app for multiple environments for debug or release. If you build the app with Debug, app logs will be shown.
 
 # Testing App
 There are two different folders within the project. These are `SoundCloudMemoryUnitTests` and `SoundCloudMemoryUITests`
@@ -48,21 +48,7 @@ There are two different folders within the project. These are `SoundCloudMemoryU
 Unit tests resides in `SoundCloudMemoryUnitTests` folder structure. Each folder is corresponding to a class in the application level. 
 
 ### UI Tests
-I also captured a small UI test scenario to make sure all UI components are responsive. This test file is just under `SoundCloudMemoryUITests` folder.
+UI tests reside just under `SoundCloudMemoryUITests` folder.
 
 # Cocoapods
-I used Cocoapods as dependency manager to manage 3rd party libraries and resources. See also [Cocoapods](http://cocoapods.org)
-
-# Used Third Party Libraries
-
-**1. Alamofire**
-I used Alamofire as HTTP networking library. It assist me to send a request to your SoundCloud API.
-To see [Alamofire](https://github.com/Alamofire/Alamofire)
-
-**2. SwiftyJSON**
-I used SwiftyJSON dependency to convert JSON responses to meaningful objects on Swift side. 
-To see [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
-
-**3. PromiseKit**
-I used this library to increase the readability of the code. Async calls and inner callbacks make the application complex. With this pattern, development and readability has improved.
-To see [PromiseKit](https://github.com/mxcl/PromiseKit)
+Cocoapods is used as dependency manager to manage 3rd party libraries and resources. See also [Cocoapods](http://cocoapods.org)
