@@ -1,4 +1,4 @@
-SoundCloud Memory Game
+Memory Game
 ========================
 The memory game with a grid of 4x4 cells written in Swift.
 
